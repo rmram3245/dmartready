@@ -3,8 +3,10 @@
 This package keeps the existing React landing page and `/admin` UI, and adds the backend API those screens expect.
 
 ## Requirements
-- Node.js 18 or newer
+- Node.js 24.x (configured in `.nvmrc` and `package.json`)
 - npm
+
+If you use nvm, run `nvm install` followed by `nvm use` in this folder before installing dependencies. Netlify also uses `.nvmrc` to select the project's Node.js version.
 
 ## Start on a computer
 1. Extract the ZIP to a folder.
