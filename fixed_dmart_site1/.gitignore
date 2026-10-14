@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.netlify/
+.env
+.env.*
+dmart_admin_password.txt
+server-data/
+uploads/
