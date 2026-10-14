@@ -2,6 +2,14 @@
 
 This package keeps the existing React landing page and `/admin` UI, and adds the backend API those screens expect.
 
+## Netlify deployment
+
+The existing Netlify base directory is `fixed_dmart_site1`. The `netlify.toml` in that directory sets the build command to `npm run build` and the publish directory to `dist`, relative to the base directory. The build copies the committed frontend assets into `dist` and exits; it does not start `server.js`. Keep `npm start` for local testing only.
+
+Only `index.html` and the `assets`, `css`, `images`, and `js` directories are published. Server code, configuration, local data, and uploads are excluded from the deployed static files. The `/admin` frontend route is rewritten to `index.html`.
+
+This deployment hosts the frontend only. The Express API is not deployed, so admin authentication, APK uploads/downloads, settings, and statistics that depend on `/api` remain unavailable on Netlify. Those features require a separate backend deployment or a migration to Netlify Functions with persistent platform storage.
+
 ## Requirements
 - Node.js 18 or newer
 - npm
