@@ -5,6 +5,6 @@
   "description": "Local backend and admin API for the existing DMart landing page",
   "main": "server.js",
   "scripts": {"start": "node server.js", "dev": "node server.js", "check": "node --check server.js"},
-  "engines": {"node": ">=18"},
+  "engines": {"node": "24.x"},
   "dependencies": {"dotenv": "^16.4.7", "express": "^4.21.2", "multer": "^1.4.5-lts.1"}
 }
